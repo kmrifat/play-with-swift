@@ -16,11 +16,14 @@ struct ChatView: View {
         List(selection: $homeData.selectedrecentMsg) {
             ForEach(homeData.msgs.filter {
                 homeData.search.isEmpty ||
-                    $0.userName.localizedCaseInsensitiveContains(homeData.search)
+                $0.userName.localizedCaseInsensitiveContains(homeData.search)
             }) { message in
-                NavigationLink(destination: Text("Destination"), label: {
-                    RecentCardView(recentMsg: message)
-                })
+                NavigationLink(
+                    destination: DetailView(user: message),
+                    label: {
+                        RecentCardView(recentMsg: message)
+                    }
+                )
             }
         }
         .listStyle(SidebarListStyle())

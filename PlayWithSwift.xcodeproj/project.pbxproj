@@ -22,6 +22,8 @@
 		357448922B08CF51004CA8CC /* RecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357448912B08CF51004CA8CC /* RecentMessage.swift */; };
 		357448942B08CFC9004CA8CC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357448932B08CFC9004CA8CC /* Message.swift */; };
 		357448962B0927A0004CA8CC /* RecentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357448952B0927A0004CA8CC /* RecentCardView.swift */; };
+		3574489A2B0A2D2B004CA8CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357448992B0A2D2B004CA8CC /* DetailView.swift */; };
+		3574489C2B0A82C6004CA8CC /* DetailExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574489B2B0A82C6004CA8CC /* DetailExpandedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		357448932B08CFC9004CA8CC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		357448952B0927A0004CA8CC /* RecentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCardView.swift; sourceTree = "<group>"; };
 		357448972B0A2C33004CA8CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		357448992B0A2D2B004CA8CC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3574489B2B0A82C6004CA8CC /* DetailExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpandedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,11 +157,10 @@
 		357448842B07B46E004CA8CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				357448982B0A2CF8004CA8CC /* ChatView */,
 				357448872B07B4D7004CA8CC /* Home.swift */,
 				357448892B07B522004CA8CC /* TabButton.swift */,
 				3574488D2B07C545004CA8CC /* BlurView.swift */,
-				3574488F2B07C8D4004CA8CC /* ChatView.swift */,
-				357448952B0927A0004CA8CC /* RecentCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,17 @@
 				3574488B2B07BA5E004CA8CC /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		357448982B0A2CF8004CA8CC /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				357448952B0927A0004CA8CC /* RecentCardView.swift */,
+				3574488F2B07C8D4004CA8CC /* ChatView.swift */,
+				357448992B0A2D2B004CA8CC /* DetailView.swift */,
+				3574489B2B0A82C6004CA8CC /* DetailExpandedView.swift */,
+			);
+			path = ChatView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +328,8 @@
 				357448882B07B4D7004CA8CC /* Home.swift in Sources */,
 				357448942B08CFC9004CA8CC /* Message.swift in Sources */,
 				3574488C2B07BA5E004CA8CC /* HomeViewModel.swift in Sources */,
+				3574489A2B0A2D2B004CA8CC /* DetailView.swift in Sources */,
+				3574489C2B0A82C6004CA8CC /* DetailExpandedView.swift in Sources */,
 				357448922B08CF51004CA8CC /* RecentMessage.swift in Sources */,
 				357448902B07C8D4004CA8CC /* ChatView.swift in Sources */,
 				357448962B0927A0004CA8CC /* RecentCardView.swift in Sources */,

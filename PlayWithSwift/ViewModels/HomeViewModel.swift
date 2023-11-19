@@ -15,4 +15,10 @@ class HomeViewModel: ObservableObject {
     @Published var selectedrecentMsg: String? = recentMsg.first?.id
     
     @Published var search: String = ""
+    
+    @Published var message: String = ""
+    
+    @Published var isExpanded = false
+    
+    @Published var pickedTab = "Media"
 }
