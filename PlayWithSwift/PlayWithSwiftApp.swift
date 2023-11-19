@@ -13,5 +13,6 @@ struct PlayWithSwiftApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
