@@ -61,6 +61,7 @@
 		357448912B08CF51004CA8CC /* RecentMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMessage.swift; sourceTree = "<group>"; };
 		357448932B08CFC9004CA8CC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		357448952B0927A0004CA8CC /* RecentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCardView.swift; sourceTree = "<group>"; };
+		357448972B0A2C33004CA8CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		3574484B2B07A852004CA8CC = {
 			isa = PBXGroup;
 			children = (
+				357448972B0A2C33004CA8CC /* README.md */,
 				357448562B07A852004CA8CC /* PlayWithSwift */,
 				357448682B07A853004CA8CC /* PlayWithSwiftTests */,
 				357448722B07A853004CA8CC /* PlayWithSwiftUITests */,
