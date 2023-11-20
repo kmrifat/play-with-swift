@@ -24,6 +24,7 @@
 		357448962B0927A0004CA8CC /* RecentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357448952B0927A0004CA8CC /* RecentCardView.swift */; };
 		3574489A2B0A2D2B004CA8CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357448992B0A2D2B004CA8CC /* DetailView.swift */; };
 		3574489C2B0A82C6004CA8CC /* DetailExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574489B2B0A82C6004CA8CC /* DetailExpandedView.swift */; };
+		3574489E2B0C0013004CA8CC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574489D2B0C0013004CA8CC /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		357448972B0A2C33004CA8CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		357448992B0A2D2B004CA8CC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3574489B2B0A82C6004CA8CC /* DetailExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpandedView.swift; sourceTree = "<group>"; };
+		3574489D2B0C0013004CA8CC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				3574488F2B07C8D4004CA8CC /* ChatView.swift */,
 				357448992B0A2D2B004CA8CC /* DetailView.swift */,
 				3574489B2B0A82C6004CA8CC /* DetailExpandedView.swift */,
+				3574489D2B0C0013004CA8CC /* MessageView.swift */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				357448882B07B4D7004CA8CC /* Home.swift in Sources */,
 				357448942B08CFC9004CA8CC /* Message.swift in Sources */,
 				3574488C2B07BA5E004CA8CC /* HomeViewModel.swift in Sources */,
+				3574489E2B0C0013004CA8CC /* MessageView.swift in Sources */,
 				3574489A2B0A2D2B004CA8CC /* DetailView.swift in Sources */,
 				3574489C2B0A82C6004CA8CC /* DetailExpandedView.swift in Sources */,
 				357448922B08CF51004CA8CC /* RecentMessage.swift in Sources */,

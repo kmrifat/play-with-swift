@@ -12,27 +12,37 @@ struct ChatView: View {
     @EnvironmentObject var homeData: HomeViewModel
     
     var body: some View {
-        
-        List(selection: $homeData.selectedrecentMsg) {
-            ForEach(homeData.msgs.filter {
-                homeData.search.isEmpty ||
-                $0.userName.localizedCaseInsensitiveContains(homeData.search)
-            }) { message in
-                NavigationLink(
-                    destination: DetailView(user: message),
-                    label: {
-                        RecentCardView(recentMsg: message)
-                    }
-                )
+        NavigationSplitView{
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.gray)
+                TextField("Search", text: $homeData.search).padding(.horizontal, 0)
             }
+            .padding(20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(Color.gray, lineWidth: 1)
+                    .padding()
+            ).background(BlurView())
+            
+            List(selection: $homeData.selectedrecentMsg){
+                ForEach(homeData.msgs.filter{
+                    homeData.search.isEmpty || $0.userName.localizedCaseInsensitiveContains(homeData.search)
+                }){message in
+                    NavigationLink(destination: DetailView(user: message), label: {
+                        RecentCardView(recentMsg: message)
+                    })
+                }
+            }
+        } detail: {
+            
         }
-        .listStyle(SidebarListStyle())
-        .searchable(text: $homeData.search, placement: .sidebar, prompt: "Search People")
+        
     }
     
     
 }
 
 #Preview {
-    Home()
+    ChatView().environmentObject(HomeViewModel())
 }

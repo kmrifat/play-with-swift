@@ -34,7 +34,10 @@ struct DetailView: View {
                         .foregroundColor(homeData.isExpanded ? .blue : .primary)
                 }.padding()
                 
-                Spacer()
+         
+                MessageView(user: user)
+                
+                
                 
                 HStack(spacing: 15){
                     Button(action: {}, label: {
@@ -59,11 +62,13 @@ struct DetailView: View {
                     Button(action: {}, label: {
                         Image(systemName: "mic").font(.title2)
                     }).buttonStyle(PlainButtonStyle())
-                }.padding([.horizontal, .bottom])
+                }.padding([.horizontal, .bottom, .top])
             }
-            DetailExpandedView(user: user).background(BlurView())
+            DetailExpandedView(user: user)
+                .background(BlurView())
                 .frame(width: homeData.isExpanded ? nil : 0)
-                .opacity(homeData.isExpanded ? 1 : 0).padding(0)
+                .opacity(homeData.isExpanded ? 1 : 0)
+                .padding(0)
             
         }
         .ignoresSafeArea(.all, edges: .all)
@@ -71,5 +76,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(user: RecentMessage(lastMsg: "last msg", lastMsgTime: "10.00am", pendingMsgs: "2", userName: "Rifat", userImage: "profile_1", allMsgs: Eachmsg.shuffled())).environmentObject(HomeViewModel())
+    DetailView(user: RecentMessage(lastMsg: "last msg", lastMsgTime: "10.00am", pendingMsgs: "2", userName: "Rifat", userImage: "person_1", allMsgs: Eachmsg.shuffled())).environmentObject(HomeViewModel())
 }

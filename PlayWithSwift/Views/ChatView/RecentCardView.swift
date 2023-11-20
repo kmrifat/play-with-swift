@@ -40,5 +40,6 @@ struct RecentCardView: View {
 }
 
 #Preview {
-    Home()
+    RecentCardView(recentMsg: RecentMessage(lastMsg: "Apple Tech", lastMsgTime: "15:00", pendingMsgs: "9",
+                                            userName: "rifat", userImage: "person_1", allMsgs: Eachmsg.shuffled()))
 }

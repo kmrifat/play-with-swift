@@ -24,7 +24,7 @@ struct Home: View {
                 switch homeData.selectedTab{
                 case "Home": Text("Home")
                 case "Profile": Text("Profile")
-                case "Chat":NavigationView{ChatView()}
+                case "Chat":ChatView()
                 case "Setting": Text("Setting")
                 default: Text("Default")
                 }
